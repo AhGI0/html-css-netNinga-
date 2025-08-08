@@ -1,5 +1,161 @@
-a[href="https://stackoverflow.com/questions"] {  
-    color: red; 
-    cursor: pointer  ;
-    background-color: inherit;
-}
+    /* General reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    header {
+        background: linear-gradient(to right, #ff0000, #cc0000);
+        padding: 1rem 0;
+        text-align: center;
+        color: white;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        border-bottom: 5px solid gold;
+    }
+
+    /* Banner section */
+    .banner {
+        position: relative;
+        max-width: 1000px;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .banner img {
+        width: 100%;
+        display: block;
+    }
+
+    .banner .welcome {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 1rem 1.5rem;
+        border-radius: 8px;
+    }
+
+    .banner .welcome h2 {
+        color: white;
+        font-size: 1.8rem;
+    }
+
+    .banner .welcome span {
+        color: rgb(245, 245, 6);
+        font-weight: bold;
+    }
+
+    /* Navigation bar */
+    nav {
+        background: #ffcc00;
+        padding: 0.8rem;
+        /* position: fixed; */
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+
+    nav ul li {
+        margin: 0 1rem;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #cc0000;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+        color: #333;
+    }
+
+    /* Main article */
+    main {
+        max-width: 1000px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+        /* position: absolute; */
+    }
+
+    main article h2 {
+        color: #cc0000;
+        margin-bottom: 0.5rem;
+    }
+
+    main article p {
+        margin-bottom: 2rem;
+    }
+
+    /* Image list */
+    .imgs {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+
+    .imgs li {
+        flex: 1 1 calc(50% - 1rem);
+    }
+
+    .imgs img {
+        width: 100%;
+        border-radius: 8px;
+        border: 3px solid #ffcc00;
+    }
+
+    /* Join section */
+    .join {
+        background: #cc0000;
+        color: white;
+        text-align: center;
+        padding: 2rem 1rem;
+        margin-top: 2rem;
+    }
+
+    .join h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .join p {
+        max-width: 600px;
+        margin: 0 auto 1.5rem;
+    }
+
+    .join input[type="email"] {
+        padding: 0.8rem;
+        width: 250px;
+        border: none;
+        border-radius: 7px;
+        outline: none;
+        cursor: pointer;
+    }
+
+    /* Footer */
+    footer {
+        background: #222;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+        font-size: 0.9rem;
+    }
+
+
+
+    
